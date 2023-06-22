@@ -2,8 +2,20 @@
 title: "About"
 ---
 
-About this site
+## About Me
+### Name: **Luit**, School: Liberty High
+## About the Project
+### *first-website*, Quarto Website Tutorial
+### Goals
+- Finish tutorial
+  + Must spend some time
+- Get Credit
 
-```{r}
-1 + 1
-```
+"This is data science"
+\
+~Preceptor
+
+[“Kane’s Free Data Science Bootcamp”](https://bootcamp.davidkane.info)
+
+
+
