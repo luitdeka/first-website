@@ -7,8 +7,29 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-    
+      - href: about.qmd
+        text: About
+      - sidebar:sources
+      
+  sidebar:
+      - id: sources
+        title: "Sources"
+        style: "floating"
+        background: "#ffffff"
+        collapse-level: 2
+        contents:
+          - source-1.qmd
+          - source-2.qmd
+  sidebar:interactive
+      - id: interactive
+      - title: "Interactive Pages"
+      - style: "floating"
+      - background: "#ffffff"
+      - ollapse-level: 3
+      - contents: 
+          - plane-passengers.qmd
+          - map-london.qmd
+          - plotly.qmd
 
 format:
   html:

@@ -9,23 +9,22 @@ execute:
 #| message: false
 library(tidyverse)
 library(ggthemes)
+library(knitr)
 ```
 
 
 ```{r}
 #| label: car-plot
-mtcars |>
-  select(mpg, wt) |>
-  ggplot(aes(x = wt, y = mpg)) + 
-  geom_point() +
-  geom_smooth(method = "lm",
-  formula = y ~ x, se = FALSE) +
-  theme_clean() +
-  labs(
-  title = "Fuel Efficiency and Weight",
-  subtitle = "Heavier Cars have less fuel efficiency",
-  x = "Weight(1000s of pounds)", y = "MPG",
-  caption = "Henderson and Vellerman(1981)"
-  )
+car_plot <- read_rds(file = "car-plot.rds")
+car_plot
+ggsave("car-plot.png", car_plot)
 ```
+
+
+```{r}
+include_graphics("images/car-plot.png")
+#Made an image with this code
+```
+
+
 
